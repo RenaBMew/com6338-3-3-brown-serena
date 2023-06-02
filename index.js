@@ -52,6 +52,6 @@ function runQuiz() {
         }
     }
 
-    var percentCorrect = (correctAns / questionsArr.length) * 100;
+    var percentCorrect = Math.round((correctAns / questionsArr.length) * 100);
     alert('Thank you for taking this quiz! \nYou scored ' + percentCorrect + '%');
 }
